@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-div">
+        <h1 class="header">Weather App</h1>
+
+        <div class="search-section">
+
+            <div class="search-upper-section">
+                <img src="images/location.png" alt="Location Image" class="location-pic">
+                <p class="js-city city-name"></p>
+            </div>  
+
+            <div class="search-bottom-section">
+                <input type="text" placeholder="Search for a city..." class="city-input js-city-input">
+                <div class="search-button-div">
+                    <button class="js-search-button search-button">Search</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="weather-info-section">
+            <div class="weather-info-upper-section">
+                <div class="weather-info-left-section">
+                <h1 class="temperature-today"></h1>
+                <p class="feels-like"></p>
+                </div>
+
+                <div class="weather-info-right-section">
+                <img src="" alt="" class="todays-weather-state">
+                </div>
+            </div>
+
+            <div class="weather-info-bottom-section">
+                <div class="weather-additional-info">
+                    <div class="additional-info-upper">
+                    <img src="images/drop.png" alt="Humidity Icon">
+                    <span class="header-info">Humidity</span>
+                    </div>
+
+                    <div class="additional-info-bottom">
+                        <h2 class="show-humidity"></h2>
+                    </div>
+                </div>
+
+                <div class="weather-additional-info">
+                    <div class="additional-info-upper">
+                    <img src="images/wind.png" alt="Humidity Icon">
+                    <span class="header-info">Wind Speed</span>
+                    </div>
+
+                    <div class="additional-info-bottom">
+                        <h2 class="show-wind-speed"></h2>
+                    </div>
+                </div>
+
+                <div class="weather-additional-info">
+                    <div class="additional-info-upper">
+                    <img src="images/view.png" alt="Humidity Icon">
+                    <span class="header-info">Visibility</span>
+                    </div>
+
+                    <div class="additional-info-bottom">
+                        <h2 class="show-visibility"></h2>
+                    </div>
+                </div>
+
+                <div class="weather-additional-info">
+                    <div class="additional-info-upper">
+                    <img src="images/pressure.png" alt="Humidity Icon">
+                    <span class="header-info">Pressure</span>
+                    </div>
+
+                    <div class="additional-info-bottom">
+                        <h2 class="show-pressure"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="five-day-forecast">
+            <div class="five-day-header">
+                <h3 class="five-day-title">5-Day Forecast</h3>
+            </div>
+
+            <div class="five-day-footer">
+                <div class="first-day upcoming-days-div">
+                    <div>
+                    <h4 class="today title">Today</h4>
+                    <div class="upcoming-day-info">
+                    <img src="" alt="Cloud Picture" class="forecast-pic">
+                    <h4 class="today-max-temp maxmin-temp"></h4>
+                    <h4 class="today-min-temp maxmin-temp"></h4>
+                    </div>
+                    </div>
+                </div>
+
+                 <div class="first-day upcoming-days-div">
+                    <div>
+                    <h4 class="tomorrow title"></h4>
+                    <div class="upcoming-day-info">
+                    <img src="" alt="Cloud Picture" class="forecast-pic">
+                    <h4 class="tomorrow-max-temp maxmin-temp"></h4>
+                    <h4 class="tomorrow-min-temp maxmin-temp"></h4>
+                    </div>
+                    </div>
+                </div>
+
+                 <div class="first-day upcoming-days-div">
+                    <div>
+                    <h4 class="third-day title"></h4>
+                    <div class="upcoming-day-info">
+                    <img src="" alt="Cloud Picture" class="forecast-pic">
+                    <h4 class="third-day-max-temp maxmin-temp"></h4>
+                    <h4 class="third-day-min-temp maxmin-temp"></h4>
+                    </div>
+                    </div>
+                </div>
+
+                 <div class="first-day upcoming-days-div">
+                    <div>
+                    <h4 class="fourth-day title"></h4>
+                    <div class="upcoming-day-info">
+                    <img src="" alt="Cloud Picture" class="forecast-pic">
+                    <h4 class="fourth-day-max-temp maxmin-temp"></h4>
+                    <h4 class="fourth-day-min-temp maxmin-temp"></h4>
+                    </div>
+                    </div>
+                </div>
+
+                 <div class="first-day upcoming-days-div">
+                    <div>
+                    <h4 class="fifth-day title"></h4>
+                    <div class="upcoming-day-info">
+                    <img src="" alt="Cloud Picture" class="forecast-pic">
+                    <h4 class="fifth-day-max-temp maxmin-temp"></h4>
+                    <h4 class="fifth-day-min-temp maxmin-temp"></h4>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loading-screen hidden">
+        <p>Loading...</p>
+        <p>Please Wait</p>
+    </div>
+
+    <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
